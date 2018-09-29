@@ -22,7 +22,12 @@ class App extends Component {
     2: false,
     3: false,
     4: false,
-    5: false  
+    5: false,
+    6: false,
+    7: false,
+    8: false,
+    9: false,
+    10: false
   };
 
   reset = () => {
@@ -41,12 +46,17 @@ class App extends Component {
   };
 
   isFlipped = id => this.state[id];
+  
 
-  toggle = id =>
-    this.setState({
-      ...this.state,
-      [id]: !this.isFlipped(id)
-    });
+  toggle = id => {
+      if(Object.values(this.state).filter(i => i === true).length >= 2) {
+          return this.reset()
+      }
+    this.setState({        
+        ...this.state,
+        [id]: !this.isFlipped(id)
+      });  
+  }
 
   render() {
     return (
