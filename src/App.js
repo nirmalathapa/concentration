@@ -31,7 +31,12 @@ class App extends Component {
       2: false,
       3: false,
       4: false,
-      5: false
+      5: false,
+      6: false,
+      7: false,
+      8: false,
+      9: false,
+      10: false
     });
   };
 
@@ -65,19 +70,19 @@ class App extends Component {
             <Card flipped={this.isFlipped(5)} onClick={() => this.toggle(5)}>
               <img src={img5} alt="img" />
             </Card>
-            <Card flipped={this.isFlipped(1)} onClick={() => this.toggle(1)}>
+            <Card flipped={this.isFlipped(6)} onClick={() => this.toggle(6)}>
               <img src={img1} alt="img" />
             </Card>
-            <Card flipped={this.isFlipped(2)} onClick={() => this.toggle(2)}>
+            <Card flipped={this.isFlipped(7)} onClick={() => this.toggle(7)}>
               <img src={img2} alt="img" />
             </Card>
-            <Card flipped={this.isFlipped(3)} onClick={() => this.toggle(3)}>
+            <Card flipped={this.isFlipped(8)} onClick={() => this.toggle(8)}>
               <img src={img3} alt="img" />
             </Card>
-            <Card flipped={this.isFlipped(4)} onClick={() => this.toggle(4)}>
+            <Card flipped={this.isFlipped(9)} onClick={() => this.toggle(9)}>
               <img src={img4} alt="img" />
             </Card>
-            <Card flipped={this.isFlipped(5)} onClick={() => this.toggle(5)}>
+            <Card flipped={this.isFlipped(10)} onClick={() => this.toggle(10)}>
               <img src={img5} alt="img" />
             </Card>
           </div>
