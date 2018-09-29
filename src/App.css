@@ -1,0 +1,51 @@
+body, form{
+    margin:0;
+    padding: 0;
+    font-size: 12pt;
+}
+:focus{
+    outline: none;
+}
+a{
+    color:red;
+}
+a:hover{
+    color: blue;
+}
+h1{
+    font: 1em sans-serif;
+}
+
+.cardContainer{
+    background: darkkhaki;
+    padding:3em;    
+}
+.wrap{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 1em;
+}
+.card{
+    background: darkorange;
+    padding:1em;
+    margin: 0;
+    border: 0.1em solid green;
+    width: 13.5em;
+    height: 17em;    
+}
+
+ img{
+    max-width: 100%;
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+}
+button{
+    display: inline-block;
+    padding: 1em 2em;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    font-size: 1em;
+}
