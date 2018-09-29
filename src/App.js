@@ -19,13 +19,19 @@ class Card extends Component {
 class App extends Component {
   state = {
     1: false,
-    2: false
+    2: false,
+    3: false,
+    4: false,
+    5: false  
   };
 
   reset = () => {
     this.setState({
       1: false,
-      2: false
+      2: false,
+      3: false,
+      4: false,
+      5: false
     });
   };
 
@@ -50,28 +56,28 @@ class App extends Component {
             <Card flipped={this.isFlipped(2)} onClick={() => this.toggle(2)}>
               <img src={img2} alt="img" />
             </Card>
-            <Card>
+            <Card flipped={this.isFlipped(3)} onClick={() => this.toggle(3)}>
               <img src={img3} alt="img" />
             </Card>
-            <Card>
+            <Card flipped={this.isFlipped(4)} onClick={() => this.toggle(4)}>
               <img src={img4} alt="img" />
             </Card>
-            <Card>
+            <Card flipped={this.isFlipped(5)} onClick={() => this.toggle(5)}>
               <img src={img5} alt="img" />
             </Card>
-            <Card>
+            <Card flipped={this.isFlipped(1)} onClick={() => this.toggle(1)}>
               <img src={img1} alt="img" />
             </Card>
-            <Card>
+            <Card flipped={this.isFlipped(2)} onClick={() => this.toggle(2)}>
               <img src={img2} alt="img" />
             </Card>
-            <Card>
+            <Card flipped={this.isFlipped(3)} onClick={() => this.toggle(3)}>
               <img src={img3} alt="img" />
             </Card>
-            <Card>
+            <Card flipped={this.isFlipped(4)} onClick={() => this.toggle(4)}>
               <img src={img4} alt="img" />
             </Card>
-            <Card>
+            <Card flipped={this.isFlipped(5)} onClick={() => this.toggle(5)}>
               <img src={img5} alt="img" />
             </Card>
           </div>
