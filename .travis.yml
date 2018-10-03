@@ -12,7 +12,7 @@ script:
 deploy:
   provider: surge
   skip_cleanup: true
-  domain: contentration-game.surge.sh
+  domain: concentration-game.surge.sh
   project: ./build/
 on:
   branch: master
