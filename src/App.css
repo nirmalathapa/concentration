@@ -1,14 +1,21 @@
 body, form{
     margin:0;
     padding: 0;
+    top:0;
+    bottom:0;
+    top:left;
+    bottom:right;
     font-size: 12pt;
 }
+
 :focus{
     outline: none;
 }
+
 a{
     color:red;
 }
+
 a:hover{
     color: blue;
 }
@@ -17,35 +24,57 @@ h1{
 }
 
 .cardContainer{
-    background: darkkhaki;
+    background: white;
     padding:3em;    
 }
 .wrap{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     row-gap: 1em;
-}
-.card{
-    background: darkorange;
-    padding:1em;
-    margin: 0;
-    border: 0.1em solid green;
-    width: 13.5em;
-    height: 17em;    
+    column-gap: 1em;
+    justify-items: center;
 }
 
- img{
+.wrap > *{
+    padding:1em;
+    margin: 0;
+    box-shadow: 0 0.2em 0.9em rgba(0,0,0,0.3);
+    width: 13em;
+    height: 15em;
+     transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(0.9, 0.9);
+}
+
+.card:hover::after{
+    opacity: 1;
+}
+
+.card::after {
+    content: '';
+    opacity: 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+
+img{
     max-width: 100%;
     background-size: cover;
-    height: auto;
+    width: 15em;
+    height: 15em;
     background-repeat: no-repeat;
 }
+
 button{
     display: inline-block;
     padding: 1em 2em;
     border: 1px solid darkgrey;
     border-radius: 5px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     margin-right: 1em;
+    margin-left: 0.5em;
     font-size: 1em;
 }
