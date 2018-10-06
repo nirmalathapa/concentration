@@ -9,7 +9,7 @@ player gets the point otherwise loses the game. Also it is necessary to
 remember the image of the card that was flipped before.
 The app is still under construction 🚧
 ## Screenshot
-![screenshot](newscreenshot.jpg)
+![screenshot](screenshot.jpg)
 ## Made With
 [Create React App](https://github.com/facebook/create-react-app)
 ## Getting Started
