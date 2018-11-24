@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import './App.css'
-import img1 from './img1.jpg'
-import img2 from './img2.jpg'
-import img3 from './img3.jpg'
-import img4 from './img4.jpg'
-import img5 from './img5.jpg'
+import './assets/App.css'
+import img1 from './assets/img1.jpg'
+import img2 from './assets/img2.jpg'
+import img3 from './assets/img3.jpg'
+import img4 from './assets/img4.jpg'
+import img5 from './assets/img5.jpg'
+
 
 class Card extends Component {
   render() {
