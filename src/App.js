@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import './assets/App.css'
+import './assets/App.css';
+import Card from './Card.js';
 import img1 from './assets/img1.jpg'
 import img2 from './assets/img2.jpg'
 import img3 from './assets/img3.jpg'
@@ -7,15 +8,6 @@ import img4 from './assets/img4.jpg'
 import img5 from './assets/img5.jpg'
 
 
-class Card extends Component {
-  render() {
-    return (
-      <div className="card" onClick={this.props.onClick}>
-        {this.props.flipped ? this.props.children : <p>Not flipped</p>}
-      </div>
-    )
-  }
-}
 
 class App extends Component {
   state = {
@@ -73,6 +65,7 @@ class App extends Component {
             >
               <img src={img1} alt="img" />
             </Card>
+            
             <Card
               flipped={this.isFlipped(2)}
               onClick={() => this.toggle(2)}
@@ -143,4 +136,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default App;
