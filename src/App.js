@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './assets/App.css';
-import Card from './Card.js';
+import Card from './components/Card';
+import Button from './components/Button';
 import img1 from './assets/img1.jpg'
 import img2 from './assets/img2.jpg'
 import img3 from './assets/img3.jpg'
@@ -55,8 +56,8 @@ class App extends Component {
     return (
       <div className="App">
         <main className="cardContainer">
-          <button onClick={() => this.reset()}>Reset Game</button>
-          <button>Score</button>
+          <Button />
+          
           <div className="wrap">
             <Card
               flipped={this.isFlipped(1)}
