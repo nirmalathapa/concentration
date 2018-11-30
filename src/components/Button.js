@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Button = (props) => {
-  return <h1>hello</h1>
+  return <button>{props.reset}{props.score}</button>
+
 }
 
 export default Button;

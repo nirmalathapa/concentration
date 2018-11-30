@@ -56,7 +56,8 @@ class App extends Component {
     return (
       <div className="App">
         <main className="cardContainer">
-          <Button />
+          <Button reset="Reset Game"/>
+          <Button score="Score"/>
           
           <div className="wrap">
             <Card
